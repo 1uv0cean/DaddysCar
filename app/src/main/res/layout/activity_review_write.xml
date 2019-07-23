@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_constraintLeft_toLeftOf="parent"
+        android:layout_constraintRight_toRightOf="child"
+        android:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/View_Shape">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_span="2"
+                android:background="@drawable/intro_table_Shape"
+                android:gravity="center"
+                android:text="리뷰"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/View_Shape">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/intro_table_Shape"
+                android:gravity="center"
+                android:text="별점"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="*****"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/View_Shape">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/intro_table_Shape"
+                android:gravity="center"
+                android:text="내용"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="154dp"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:text="DESC-2"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/join_button"
+            android:layout_width="300px"
+            android:layout_height="50dp"
+            android:text="전송" />
+    </LinearLayout>
+</LinearLayout>

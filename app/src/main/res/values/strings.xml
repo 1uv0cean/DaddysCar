@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">아빠차</string>
+    <string name="main_btn_1">번호판 확인</string>
+    <string name="main_btn_2">주변 택시 탐색</string>
+    <string name="CP_T">인천 00바 0000</string>
+    <string name="reg_hint_name">이름을 입력하세요.</string>
+    <string name="reg_hint_email">Email을 입력하세요.</string>
+    <string name="reg_hint_passwd">Password를 입력하세요.</string>
+    <string name="reg_hint_mobileNo">휴대폰번호를 입력하세요.</string>
+    <string name="reg_btn">회원가입</string>
+    <string name="btn_link_roginpage"> Already registred! </string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/CP_Camera"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_weight="30"
+        android:background="@drawable/View_Shape" />
+
+    <TextView
+        android:id="@+id/CP_Text"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/View_Shape"
+        android:gravity="center"
+        android:text="@string/CP_T"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/IT_btn"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:background="#ff3300"
+        android:text="불법 차량 신고하기"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+</LinearLayout>
