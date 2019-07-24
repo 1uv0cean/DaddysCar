@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_weight="10"
-        android:background="@drawable/View_Shape" />
+        android:background="@drawable/view_shape" />
 
     <TextView
         android:id="@+id/CP_Text"
@@ -21,7 +21,7 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="75dp"
         android:layout_marginRight="35dp"
-        android:background="@drawable/View_Shape"
+        android:background="@drawable/view_shape"
         android:gravity="center"
         android:text="@string/CP_T"
         android:textColor="@color/black"

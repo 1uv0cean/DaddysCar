@@ -54,7 +54,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:background="@drawable/View_Shape">
+        android:background="@drawable/view_shape">
 
     </View>
     <!--하차버튼-->

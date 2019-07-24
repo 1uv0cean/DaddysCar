@@ -23,9 +23,6 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_constraintLeft_toLeftOf="parent"
-        android:layout_constraintRight_toRightOf="child"
-        android:layout_constraintTop_toTopOf="parent"
         android:layout_margin="8dp"
         android:stretchColumns="1">
 
@@ -34,13 +31,13 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="100dp"
             android:layout_marginRight="40dp"
-            android:background="@drawable/View_Shape">
+            android:background="@drawable/view_shape">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_span="2"
-                android:background="@drawable/intro_table_Shape"
+                android:background="@drawable/intro_table_shape"
                 android:gravity="center"
                 android:text="리뷰"
                 android:textSize="24sp"
@@ -50,12 +47,12 @@
         <TableRow
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:background="@drawable/View_Shape">
+            android:background="@drawable/view_shape">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/intro_table_Shape"
+                android:background="@drawable/intro_table_shape"
                 android:gravity="center"
                 android:text="별점"
                 android:textSize="24sp"
@@ -72,12 +69,12 @@
         <TableRow
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:background="@drawable/View_Shape">
+            android:background="@drawable/view_shape">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/intro_table_Shape"
+                android:background="@drawable/intro_table_shape"
                 android:gravity="center"
                 android:text="내용"
                 android:textSize="24sp"
