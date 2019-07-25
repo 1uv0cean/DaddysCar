@@ -41,7 +41,7 @@
     <Button
         android:id="@+id/IT_btn"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="100sp"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="50dp"
         android:background="#ff3300"

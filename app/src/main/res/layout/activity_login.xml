@@ -64,6 +64,7 @@
                 android:textColor="#000000" />
 
             <EditText
+                android:id="@+id/id"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="5.7"
@@ -100,6 +101,7 @@
                 android:textColor="#000000" />
 
             <EditText
+                android:id="@+id/password"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="5.7"
@@ -195,6 +197,7 @@
         android:textStyle="bold" />
 
     <com.kakao.usermgmt.LoginButton
+        android:id="@+id/kakao_btn"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"

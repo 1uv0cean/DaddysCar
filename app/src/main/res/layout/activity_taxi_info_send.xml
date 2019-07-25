@@ -30,18 +30,18 @@
             android:layout_marginRight="40dp">
 
             <ImageView
-                android:id="@+id/image1"
-                android:layout_width="100dp"
+                android:id="@+id/driver_image"
+                android:layout_width="120dp"
                 android:layout_height="160dp"
                 android:background="@drawable/view_shape" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/driver_name"
+                android:layout_width="197dp"
                 android:layout_height="match_parent"
-                android:gravity="center|right"
-                android:text="왕안전"
-
-                android:textSize="40sp"
+                android:gravity="center"
+                android:text="왕 안 전"
+                android:textSize="36sp"
                 android:textStyle="bold" />
 
         </TableRow>
@@ -54,20 +54,21 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40sp"
                 android:background="@drawable/intro_table_shape"
                 android:gravity="center"
                 android:text="회사"
-                android:textSize="24sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/taxi_com"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_span="5"
+                android:layout_height="40dp"
+                android:layout_span="320"
                 android:gravity="center"
-                android:text="DESC-2"
-                android:textSize="24sp" />
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </TableRow>
 
         <TableRow
@@ -76,21 +77,22 @@
             android:background="@drawable/view_shape">
 
             <TextView
+                android:id="@+id/taxi_license"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40sp"
                 android:background="@drawable/intro_table_shape"
                 android:gravity="center"
                 android:text="택시면허"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"  />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_span="5"
+                android:layout_height="40dp"
+                android:layout_span="320"
                 android:gravity="center"
-                android:text="DESC-2"
-                android:textSize="24sp" />
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </TableRow>
 
         <TableRow
@@ -100,43 +102,46 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40sp"
                 android:background="@drawable/intro_table_shape"
                 android:gravity="center"
                 android:text="차량 번호"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"  />
 
             <TextView
+                android:id="@+id/taxi_num"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_span="5"
+                android:layout_height="40dp"
+                android:layout_span="320"
                 android:gravity="center"
-                android:text="DESC-2"
-                android:textSize="24sp" />
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </TableRow>
 
         <TableRow
+            android:layout_width="229dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:background="@drawable/view_shape">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="40sp"
                 android:background="@drawable/intro_table_shape"
                 android:gravity="center"
                 android:text="탑승 위치"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"  />
 
             <TextView
+                android:id="@+id/take_gps"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_span="5"
+                android:layout_height="40dp"
+                android:layout_span="320"
                 android:gravity="center"
                 android:text=""
-                android:textSize="24sp" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </TableRow>
     </TableLayout>
 
@@ -147,14 +152,17 @@
         android:orientation="horizontal"
         android:paddingTop="10dp">
 
-        <View
-            android:layout_width="200dp"
-            android:layout_height="0dp" />
+        <view
+            android:layout_width="160sp"
+            android:layout_height="1sp"/>
 
         <Button
             android:id="@+id/trans_btn"
-            android:layout_width="300px"
+            android:layout_width="150sp"
             android:layout_height="wrap_content"
+            android:background="@drawable/main_btn_shape"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:text="전송" />
     </LinearLayout>
 </LinearLayout>
