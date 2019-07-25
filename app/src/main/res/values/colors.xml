@@ -9,6 +9,10 @@
     <color name="input_register_bg">#ffffff</color>
     <color name="input_register">#000000</color>
     <color name="input_register_hint">#777777</color>
+    <color name="real_gray">#666666</color>
     <color name="light_gray">#d3d3d3</color>
     <color name="white">#ffffff</color>
+    <color name="red">#cd0000</color>
+    <color name="green">#82eb5a</color>
+    <color name="oran">ff9b00</color>
 </resources>

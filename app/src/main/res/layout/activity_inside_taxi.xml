@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,21 +7,21 @@
     android:weightSum="100"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_weight="2"
-            android:src="@drawable/logo" />
-    </LinearLayout>
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_weight="20"
+        android:src="@drawable/logo" />
 
     <LinearLayout
+        android:id="@+id/tag"
+        android:layout_below="@id/logo"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
@@ -29,29 +29,40 @@
         android:weightSum="100">
 
         <Button
-            android:id="@+id/info_btn"
-            android:layout_width="wrap_content"
+            android:id="@+id/emergency_btn"
+            android:layout_width="130sp"
             android:layout_height="match_parent"
+            android:weight="20"
             android:text="긴급 신고"
-            android:textSize="36sp" />
+            android:background="red"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="36sp"
+            />
 
         <TextView
-            android:id="@+id/emergency_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="153dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:gravity="center"
             android:text="탑승중..."
-            android:textSize="36sp" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="36sp"
+            android:weight="80" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/info_btn"
+            android:layout_width="130dp"
             android:layout_height="match_parent"
+            android:weight="20"
             android:text="정보 전송"
-            android:textSize="36sp" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="36sp"
+             />
 
     </LinearLayout>
     <!--현재 gps위치를 나타내는 지도-->
     <View
+        android:id="@+id/now_map"
+        android:layout_below="@id/tag"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:background="@drawable/view_shape">
@@ -61,7 +72,12 @@
     <Button
         android:id="@+id/quit_btn"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="150dp"
         android:text="하차하기"
-        android:textSize="48sp" />
-</LinearLayout>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:textSize="48sp"
+        android:layout_below="@id/now_map"
+        android:background="@drawable/gray_btn"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

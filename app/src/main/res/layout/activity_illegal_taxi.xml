@@ -7,21 +7,17 @@
     android:weightSum="100"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_weight="2"
-            android:src="@drawable/logo" />
-    </LinearLayout>
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_weight="20"
+        android:src="@drawable/logo" />
 
     <ImageView
+        android:layout_below="@id/logo"
         android:id="@+id/CP_Camera"
         android:layout_width="match_parent"
         android:layout_height="240dp"
@@ -29,6 +25,7 @@
         android:background="@drawable/view_shape" />
 
     <TextView
+        android:layout_below="@id/CP_Camera"
         android:id="@+id/CP_Text"
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -49,6 +46,7 @@
         android:layout_marginTop="50dp"
         android:background="#ff3300"
         android:text="불법 차량 신고하기"
-        android:textSize="45dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="45sp"
         android:textStyle="bold" />
 </RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_weight="20"
+        android:src="@drawable/logo" />
+
+    <View
+        android:id="@+id/empty"
+        android:layout_below="@id/logo"
+        android:layout_width="0dp"
+        android:layout_height="200sp"/>
+
+    <LinearLayout
+        android:layout_below="@id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="회원가입 시  인증한 이메일"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_shape"
+                android:hint="@string/reg_hint_email"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:background="@drawable/white_yellow_btn"
+            android:text="확인"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

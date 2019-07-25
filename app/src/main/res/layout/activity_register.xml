@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/bg_register"
+    android:background="@color/white"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp">
@@ -28,54 +28,133 @@
         android:orientation="vertical"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
-
-        <EditText
-            android:id="@+id/name"
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@color/input_register_bg"
-            android:hint="@string/reg_hint_name"
-            android:inputType="textCapWords"
-            android:padding="10dp"
-            android:textColor="@color/input_register"
-            android:textColorHint="@color/input_register_hint" />
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
 
-        <EditText
-            android:id="@+id/email"
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="아이디"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_shape"
+                android:hint="@string/reg_hint_id"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="right"
+            android:background="@drawable/view_shape"
+            android:text="중복확인"
+            />
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
             android:layout_marginBottom="10dp"
-            android:background="@color/input_register_bg"
-            android:hint="@string/reg_hint_email"
-            android:inputType="textEmailAddress"
+        >
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:textColor="@color/input_register"
-            android:textColorHint="@color/input_register_hint" />
-
+            android:gravity="center"
+            android:text="비밀번호"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            />
         <EditText
             android:id="@+id/password"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@color/input_register_bg"
+            android:background="@drawable/view_shape"
             android:hint="@string/reg_hint_passwd"
             android:inputType="textPassword"
             android:padding="10dp"
             android:textColor="@color/input_register"
             android:textColorHint="@color/input_register_hint" />
-
-        <EditText
-            android:id="@+id/mobileNO"
+    </LinearLayout>
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
             android:layout_marginBottom="10dp"
-            android:background="@color/input_register_bg"
-            android:hint="@string/reg_hint_mobileNo"
-            android:inputType="number"
-            android:padding="10dp"
-            android:textColor="@color/input_register"
-            android:textColorHint="@color/input_register_hint" />
+            >
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="비밀번호 확인"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/re_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_shape"
+                android:hint="@string/reg_hint_passwd"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="이메일"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_shape"
+                android:hint="@string/reg_hint_email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/view_shape"
+            android:text="이메일 인증"
+        />
+
 
         <!-- Login Button -->
         <Button
@@ -84,8 +163,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
             android:background="#ea4c88"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:text="@string/reg_btn"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
         <!-- Link to Login Screen -->
         <Button
@@ -93,10 +173,10 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dip"
-            android:background="@color/bg_register"
+            android:background="@color/white"
             android:text="@string/btn_link_roginpage"
             android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
     </LinearLayout>
 </LinearLayout>
