@@ -118,7 +118,7 @@
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:textColor="@color/input_register"
-                android:textColorHint="@color/input_register_hint" />
+                android:textColorHint="@color/input_register_hint"  />
         </LinearLayout>
 
         <LinearLayout

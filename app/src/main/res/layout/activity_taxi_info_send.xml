@@ -33,7 +33,7 @@
                 android:id="@+id/driver_image"
                 android:layout_width="120dp"
                 android:layout_height="160dp"
-                android:background="@drawable/view_shape" />
+                android:background="@drawable/view_shape"  />
 
             <TextView
                 android:id="@+id/driver_name"
