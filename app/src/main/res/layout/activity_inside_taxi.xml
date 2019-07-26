@@ -32,7 +32,6 @@
             android:id="@+id/emergency_btn"
             android:layout_width="100sp"
             android:layout_height="match_parent"
-            android:weight="2"
             android:text="긴급 신고"
             android:background="@color/red"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -47,14 +46,12 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:background="@color/oran"
             android:textSize="36sp"
-            android:textStyle="bold"
-            android:weight="8" />
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/info_btn"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:weight="2"
             android:text="정보 전송"
             android:background="@color/green"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"

@@ -50,7 +50,6 @@
                 android:id="@+id/email"
                 android:layout_width="fill_parent"
                 android:layout_height="55dp"
-                android:layout_gravit="center"
                 android:background="@drawable/view_shape"
                 android:hint="@string/reg_hint_email"
                 android:inputType="textCapWords"

@@ -9,4 +9,7 @@
     <string name="reg_hint_mobileNo">휴대폰번호를 입력하세요.</string>
     <string name="reg_btn">회원가입</string>
     <string name="btn_link_roginpage"> Already registred! </string>
+
+    // 카카오 앱 키
+    <string name="kakao_app_key">d838bc54248aa81a8c9ec8fd9740cef3</string>
 </resources>
