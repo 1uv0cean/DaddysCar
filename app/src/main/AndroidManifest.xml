@@ -24,6 +24,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Recognize_carnoActivity"></activity>
+        <activity android:name=".Nearby_taxiActivity"></activity>
+        <activity android:name=".Inside_taxiActivity"></activity>
+        <activity android:name=".Review_writeActivity"></activity>
+        <activity android:name=".Illegal_taxiActivity"></activity>
+        <activity android:name=".Taxi_info_sendActivity"></activity>
+        <activity android:name=".Driver_infoActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+
     </application>
 
 </manifest>

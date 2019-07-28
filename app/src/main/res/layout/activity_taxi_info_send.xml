@@ -152,7 +152,7 @@
         android:orientation="horizontal"
         android:paddingTop="10dp">
 
-        <view
+        <View
             android:layout_width="160sp"
             android:layout_height="1sp"/>
 
